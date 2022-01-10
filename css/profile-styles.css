@@ -1,0 +1,602 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited, a:link{
+    color: black;
+    text-decoration: none;
+}
+
+/* BODY -> sacar espacio en blanco de la parte superior*/
+body{
+    margin:0;
+}
+
+.main-page{
+    width: 99.7%;
+}
+
+/* NAVBAR */
+.navbar{
+    justify-content: space-around;
+    background-color: #6C3088;
+    height: 65px;
+}
+
+.navbar, .logo-container, .logo-image, .search-container, .search-bar, .navbar-buttons{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.logo-container{
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.logo-app-feed{
+    padding-top: 2px;
+    width: 55px;
+    height: 55px;
+}
+
+.logo-home-img{
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.search-bar{
+    margin-right: 5px;
+    width: 65%;
+}
+
+.img-lupa{
+    margin-left: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+#search-bar-input{
+    width: 890px;
+    border-radius: 8px;
+    margin-left: 55px;
+}
+
+
+.notifications, #profile-image{
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+.notifications{
+    margin-right: 10px;
+    align-items: center;
+}
+
+#notifications-button{
+    background-color: #6C3088;
+    border: none;
+    cursor:grabbing;
+}
+
+
+
+.img-notificaciones{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 7px;
+}
+.cuerpo-notificacion{
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    background-color:#F2F2F2;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+
+
+ul{
+    position:absolute;
+    left:1360px;
+    top:92px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: none;
+}
+
+#titulo-notificaciones{
+    position:absolute;
+    left:1360px;
+    top:65px;
+    margin: 0;
+    padding: 4px;
+    padding-bottom: 5px;
+    width: 291px;
+    align-items: center;
+    color: grey;
+    display: none;
+    justify-content: center;
+    background-color:#F2F2F2;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, .1);
+    
+}
+
+.texto-notificacion{
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+ul li:hover .texto-notificacion{
+    font-weight: bold;
+    color:#6C3088;
+}
+
+.notifications .cant-notificaciones{
+    position: absolute;
+    top: 10px;
+    right: 244px;
+    padding-left: 1px;
+    padding-top: 2px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    
+    width: 14px;
+    height: 17px;
+    border-radius: 10%;
+    background-color: red;
+    color:#F9F9F9;
+    text-align: center;
+   
+}
+
+#notifications-logo{
+    margin-top: 8px;
+    width: 23px;
+    height: 23px;
+    background-color: #6C3088;
+}
+
+.navbar-buttons{ 
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#profile-button{
+    background-color: #427C9D;
+    border-radius: 8px;
+    color: white;
+    width: 151px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#profile-button:hover{
+    background-color:#275671;
+}
+
+/* CONTAINER PRINCIPAL */
+
+/* NEW PUBLICATION */
+.new-publication-feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 37px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.descripcion-personal{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 800px;
+    margin-left: 50px;
+}
+
+.datos-descripcion{
+    font-weight: bold;
+    align-content: center;
+}
+
+.publicar-feed{
+    width: 27px;
+    height: 27px;
+    margin-left: 0;
+}
+
+.img-usuario-new-publication{
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.new-publication-area{
+    padding: 15px;
+    
+}
+
+/* MAIN CONTAINER*/
+
+.main-container{
+    display: flex;    
+    justify-content: space-between;
+    margin-right: 10px;
+    /*border: 1px black solid; /* ELIMINAR */
+    height: 860px;
+}
+
+.advertisenments-container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.advertisenments-container, .chat-list-container{
+    margin-right: 10px;
+    /*border: 1px black solid; /* ELIMINAR */
+}
+
+
+
+.profile-container{
+    /*border: 1px red solid; /* ELIMINAR */
+    width: 100%;
+    margin-right: 15px;
+    align-items: center;
+    height: 860px; /* Si toco acá se rompe el height*/
+    overflow-y: scroll;   
+}
+
+.profile-container::-webkit-scrollbar, .usuarios-chat::-webkit-scrollbar { 
+    width: 0 !important ;
+}
+
+/*::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+  /*  background: transparent;  /* Optional: just make scrollbar invisible */
+/*}*/
+
+.menu-container{
+    width: 20%;
+    margin-left: 10px;
+    background-color: #F9F9F9;
+}
+
+.interactions-container{
+    width: 25%;
+    height: 750px; /* Si toco acá se rompe el height*/
+    background-color: #F9F9F9;
+}
+
+
+/* MENÚ LATERAL */
+
+.logos-menu-lateral{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.new-post, .contactos, .favoritos, .post-guardados, .suggestions, .advanced-search, .settings, .logout{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+    border-top: 1px solid black;  
+    padding-left: 10px;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+    margin-left: 10px;
+}
+
+.logout{
+   border-bottom: 1px solid black;
+}
+
+/* FEED */
+
+/* .img-prueba-feed{
+    width: auto;
+    height: auto;    
+} */
+
+.img-publicacion-container{
+    display: flex;
+    justify-content: center;
+}
+
+.img-usuario-new-comment{
+    width: 65px;
+    height: 65px;
+    margin-right: 5px;
+}
+
+.img-new-publicacion{
+    margin-left: 20px;
+    margin-bottom: 20px;  
+}
+
+.new-comment{
+    display: flex;
+    align-items: center;
+}
+
+.send-comentario-publicacion{
+    margin-bottom: 22px; 
+    width: 25px;
+    height: 25px;
+}
+
+
+.new-comment-area{
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.new-comment-text{
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #F9F9F9;
+    resize: none;
+}
+
+.publicacion-feed{
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 900px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.cuerpo-publicacion{
+    color:#427C9D; /* ACOMODAR */
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.img-usuario-publicacion{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.datos-usuario{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#publicacion-a-promocionar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#texto-promocion{   
+    margin-top: 20px;
+    padding-top: 5px;
+    margin-right: 15px;
+    color:#427C9D;
+    height: 35px;
+    font-weight: bolder;
+}
+
+#oculto{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#publicacion-promocionada{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#logo-share-blue{
+    margin-right: 4px;
+}
+
+.img-promocion{
+    margin-right: 5px;
+    margin-left: 500px;    
+}
+
+#btn-promocionar-publicacion{
+    background-color: #427C9D;
+    border-radius: 8px;
+    color: white;
+    width: 160px;
+    height: 40px;
+    margin-left: 455px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:10px;
+}
+
+
+#logo-white-share{
+    margin-right: 8px;
+}
+
+
+
+.reacciones-publicacion-feed{
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.iconos-reacciones-publicacion{
+    width: 16px;
+    height: 16px;
+}
+
+.mostrar-comentarios{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 65px;
+    align-items: center;
+}
+
+.button-drop-down{
+    width: 30px;
+    height: 30px;
+}
+
+/* PUBLICIDADES */
+#sugerencias{
+    width: 100%;
+    height:37%;   
+    overflow-y: scroll;
+    
+    border-left: 2px solid rgba(0, 0, 0, .1); 
+}
+
+#sugerencias-titulo{
+    font-size: 20px;
+    margin: 15px;
+    
+}
+
+.sugerencias-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    border-right: 2px solid rgba(0, 0, 0, .1);
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    background-color: #BFA0D7;
+}
+
+.main-sugerencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+.main-sugerencia p {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.img-usuario-sug{
+    margin-right: 8px;
+}
+
+
+.chat-list-container{
+    height: 71%;
+    width: 100%;
+    /*border: none;*/
+}
+
+/* CHAT FEED */
+#chat-feed-bar{
+    width: 98%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6C3088;
+    color: white;
+    padding-left: 7px;
+}
+
+#chat-feed-img{
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.usuarios-chat{
+    overflow-y: scroll; 
+    height: 90%; 
+    background-color: white;
+}
+
+.usuario-chat{
+    display: flex;
+    align-items: center;    
+}
+
+.usuario-chat:hover{
+    background-color: #BFA0D7;
+}
+
+.img-usuario-chat{
+    margin-left: 10px;
+    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+}
+
+.menu-container, .feed-container{
+    height: 100%;
+}
+
+.new-publication-feed{
+    background-image: url("img/perfiles-usuario/fotolia_76347655-768x432.png");
+}
+
+.horario-notificacion{
+    color: grey;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.main-sugerencia{
+    justify-content: flex-start;
+    padding-left: 50px;
+}

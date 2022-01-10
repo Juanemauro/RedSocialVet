@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form-register.css" />
+    <title>Registro Patitas</title>
+  </head>
+  <body>
+    <div class="contenedor-fondo">
+        <div class="layer layer-1" data-speed="-1"></div>
+        <div class="layer layer-2"  data-speed="1"></div>
+    </div>
+    <form action="#" class="form">
+      <img class="logo" src="img/Logo2.png" alt="Logo">
+      <h1 class="text-center">Formulario de Resgitro</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active" data-title="Contacto"></div>
+        <div class="progress-step" data-title="Usuario"></div>
+        <div class="progress-step" data-title="Mascota"></div>
+        <div class="progress-step" data-title="Finalizado"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label class="texto-titulos-login" for="username">Nombre y Apellido</label>
+          <input type="text" name="username" id="username" required/>
+        </div>
+        <div class="input-group">
+          <label class="texto-titulos-login" for="position">Fecha de nacimiento</label>
+          <input type="date" name="position" id="position" required />
+        </div>
+        <div class="d-flex justify-content-center" id="hola">
+          <button class="btn btn-next width-50">Siguiente</button>
+        </div>
+        <!-- <div class="siguiente-primer-paso">
+          <a href="#" class="btn btn-next width-50 ml-auto">Siguiente</a>
+        </div> -->
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label class="texto-titulos-login" for="phone">Usuario</label>
+          <p class="ayudas-usuario">Almenos una mayúscula y un número</p>
+          <input type="text" name="phone" id="phone" required />
+        </div>
+        <div class="input-group">
+          <label class="texto-titulos-login" for="email">E-mail</label>
+          <input type="text" name="email" id="email" required/>
+        </div>
+        <div class="input-group">
+            <label class="texto-titulos-login" for="password">Contraseña</label>
+            <p class="ayudas-usuario">Mínimo 8 caracteres</p>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+            <label class="texto-titulos-login" for="password">Repita la contraseña</label>
+            <p class="ayudas-usuario">Ingrese nuevamente la contraseña</p>
+            <input  type="password" name="password" id="password" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Anterior</a>
+          <a href="#" class="btn btn-next">Siguiente</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label class="texto-titulos-login" for="dob">Nombre</label>
+          <input type="text" name="dob" id="dob" />
+        </div>
+        <div class="input-group">
+          <label class="texto-titulos-login" for="ID">Edad</label>
+          <input type="number" name="ID" id="ID" />
+        </div>
+        <div class="input-group">
+            <label class="texto-titulos-login" for="ID">Raza</label>
+            <p class="ayudas-usuario">De no tener raza ingrese 'indefinido'</p>
+            <input type="number" name="ID" id="ID" />
+        </div>
+        <div class="input-group">
+            <label class="texto-titulos-login" for="ID">Sexo</label>
+            <p class="ayudas-usuario">Macho / Hembra</p>
+            <input type="number" name="ID" id="ID" />
+          </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Anterior</a>
+          <a href="#" class="btn btn-next">Siguiente</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h4>Finalizaste el registro con éxito, ¡inicia sesión!</h4>
+        <div class="input-group">
+          <label class="texto-titulos-login" for="password">Usuario</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label class="texto-titulos-login" for="confirmPassword">Contraseña</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Anterior</a>
+          <a href="feed.html" class="btn btn-prev">Ingresar</a>
+        </div>
+      </div>
+    </form>
+    <footer>
+        <ul>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+        </ul>
+    </footer>
+    <script src="js/form-register.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
